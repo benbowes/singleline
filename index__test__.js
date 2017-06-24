@@ -1,10 +1,10 @@
 var expect = require('chai').expect;
-var oneline = require('./index');
+var singleline = require('./index');
 
-describe('online', () => {
+describe('singleline', () => {
 
   it('should convert a multuline class string to a singleline class string', function() {
-    var testMultilineClassString = oneline(`
+    var testMultilineClassString = singleline(`
 
     class1
           class2
@@ -15,7 +15,7 @@ describe('online', () => {
   });
 
   it('should convert a multuline HTML string to a singleline HTML string', function() {
-    var testMultilineHTMLString = oneline(`
+    var testMultilineHTMLString = singleline(`
 
       <!DOCTYPE html>
   <html lang="en">

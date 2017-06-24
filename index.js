@@ -1,5 +1,5 @@
-function oneline(multiLineString) {
+function singleline(multiLineString) {
   return multiLineString.replace(/\s\s+/g, ' ').trim();
 }
 
-module.exports = oneline;
+module.exports = singleline;
