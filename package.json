@@ -1,0 +1,28 @@
+{
+  "name": "oneline",
+  "version": "1.0.0",
+  "description": "Convert a multi line string into a single line string - great for classnames or html",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "test": "mocha 'index__test__.js'"
+  },
+  "author": "Ben Bowes <bb@benbowes.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benbowes/oneline"
+  },
+  "keywords": [
+    "convert",
+    "multiline",
+    "string",
+    "singleline",
+    "classnames"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "3.5.x",
+    "css-loader": "0.23.x",
+    "mocha": "3.0.x"
+  }
+}
