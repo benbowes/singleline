@@ -1,6 +1,6 @@
-# Oneline
+# singleline
 
-![Build status](https://api.travis-ci.org/benbowes/oneline.svg?branch=master)
+![Build status](https://api.travis-ci.org/benbowes/singleline.svg?branch=master)
 
 Convert a multiline string to a single line string
 ---
@@ -9,16 +9,16 @@ Convert a multiline string to a single line string
 
 Install the dependency
 
-`npm install oneline --save-dev`
+`npm install singleline --save-dev`
 
 ## React classNames example
 
 ```js
-import oneline from 'oneline';
+import singleline from 'singleline';
 
 ...
 <div
-  className={oneline(`
+  className={singleline(`
     rrs__select-container
     rrs__select-container--multiselect
     ${(disabled === true) ? 'rrs__select-container--disabled' : ''}
@@ -36,8 +36,8 @@ Some output
 ## Example 2
 
 ```js
-import oneline from 'oneline';
-var testMultilineHTMLString = oneline(`
+import singleline from 'singleline';
+var testMultilineHTMLString = singleline(`
 
   <!DOCTYPE html>
 <html lang="en">
