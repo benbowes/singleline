@@ -29,20 +29,33 @@ import oneline from 'oneline';
 >
 Some output
 </div>
+
+// className="rrs__select-container rrs__select-container--multiselect rrs__is-desktop rrs__options-container--visible"
 ```
 
 ## Example 2
 
 ```js
 import oneline from 'oneline';
-const classNames = oneline(`
-  rrs__select-container
-  rrs__select-container--multiselect
+var testMultilineHTMLString = oneline(`
 
-  rrs__is-desktop rrs__options-container--visible
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GDD - Giphy Github embed Gif code explorer</title>
+<link href="css/styleguide.css" rel="stylesheet">
+</head>
+<body>
+<div id="root" class="root"></div>
+<script src="app.js"></script>
+</body>
+</html>
+
 `);
 
-console.log("|"+classNames+"|");
+console.log(testMultilineHTMLString);
 
-// |rrs__select-container rrs__select-container--multiselect rrs__is-desktop rrs__options-container--visible|
+// '<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>GDD - Giphy Github embed Gif code explorer</title> <link href="css/styleguide.css" rel="stylesheet"> </head> <body> <div id="root" class="root"></div> <script src="app.js"></script> </body> </html>'
 ```
