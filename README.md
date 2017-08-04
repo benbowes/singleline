@@ -35,28 +35,30 @@ Some output
 
 ## Example 2
 
+Passing second parameter in as `true`, removes spaces around the HTML tags but it still respects the spaces in the contents of the tags and attributes.
+
 ```js
 import singleline from 'singleline';
 var testMultilineHTMLString = singleline(`
 
   <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GDD - Giphy Github embed Gif code explorer</title>
-<link href="css/styleguide.css" rel="stylesheet">
-</head>
-<body>
-<div id="root" class="root"></div>
-<script src="app.js"></script>
-</body>
-</html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GDD - Giphy Github embed Gif code explorer</title>
+    <link href="css/styleguide.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root" class="root"></div>
+    <script src="app.js"></script>
+  </body>
+  </html>
 
-`);
+`, true);
 
 console.log(testMultilineHTMLString);
 
-// '<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>GDD - Giphy Github embed Gif code explorer</title> <link href="css/styleguide.css" rel="stylesheet"> </head> <body> <div id="root" class="root"></div> <script src="app.js"></script> </body> </html>'
+// '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GDD - Giphy Github embed Gif code explorer</title><link href="css/styleguide.css" rel="stylesheet"></head><body><div id="root" class="root"></div><script src="app.js"></script></body></html>'
 
 ```

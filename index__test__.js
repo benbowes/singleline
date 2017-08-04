@@ -31,8 +31,8 @@ describe('singleline', () => {
   </body>
   </html>
 
-    `);
-    expect(testMultilineHTMLString).to.equal('<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>GDD - Giphy Github embed Gif code explorer</title> <link href="css/styleguide.css" rel="stylesheet"> </head> <body> <div id="root" class="root"></div> <script src="app.js"></script> </body> </html>');
+    `, true);
+    expect(testMultilineHTMLString).to.equal('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GDD - Giphy Github embed Gif code explorer</title><link href="css/styleguide.css" rel="stylesheet"></head><body><div id="root" class="root"></div><script src="app.js"></script></body></html>');
   });
 
 });
