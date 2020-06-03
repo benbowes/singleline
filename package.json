@@ -1,16 +1,48 @@
 {
   "name": "singleline",
-  "version": "1.1.0",
+  "license": "MIT",
+  "version": "2.0.0",
   "description": "Convert a multi line string into a single line string - great for classnames and more",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
     "deploy": "./deploy.sh",
-    "test": "mocha 'index__test__.js'"
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "author": "Ben Bowes <bb@benbowes.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/benbowes/singleline"
+  },
+  "module": "dist/singleline.esm.js",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.3"
   },
   "keywords": [
     "convert",
@@ -19,11 +51,5 @@
     "singleline",
     "classnames",
     "concat"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "css-loader": "^3.5.3",
-    "mocha": "^7.1.2"
-  }
+  ]
 }

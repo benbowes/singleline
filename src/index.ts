@@ -5,9 +5,10 @@
  * @returns {String}
  */
 
-function singleline(multiLineString, noSpaces) {
+export default function singleline(
+  multiLineString: string,
+  noSpaces?: boolean
+) {
   const delimiter = noSpaces ? '' : ' ';
   return multiLineString.replace(/\s\s+/g, delimiter).trim();
 }
-
-module.exports = singleline;
