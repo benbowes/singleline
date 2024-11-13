@@ -1,7 +1,7 @@
 {
   "name": "singleline",
   "license": "MIT",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Convert a multi line string into a single line string - great for classnames and more",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
